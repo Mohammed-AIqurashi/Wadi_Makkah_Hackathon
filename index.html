@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هاكاثون وادي مكة</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Professional Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+  <a href="#home" style="text-decoration: none; color: inherit;">⚡ هاكاثون</a>
+</div>
+    <ul class="nav-links">
+      <li><a href="#about">عن الفعالية</a></li>
+      <li><a href="#timeline">الجدول</a></li>
+      <li><a href="#prizes">الجوائز</a></li>
+      <li><a href="#register" class="btn-nav" id="openDrawerNav">سجّل الآن</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+      <div class="hero-content">
+      <span class="badge">📅 15-17 أغسطس 2026</span>
+      <h1>هاكاثون وادي مكة<br><span>للذكاء الاصطناعي</span></h1>
+      <p>ابتكر • طوّر • غيّر المستقبل</p>
+      
+      <!-- Countdown Timer -->
+      <div class="countdown" id="countdown">
+        <div class="count-box"><span id="days">00</span><label>يوم</label></div>
+        <div class="count-box"><span id="hours">00</span><label>ساعة</label></div>
+        <div class="count-box"><span id="minutes">00</span><label>دقيقة</label></div>
+        <div class="count-box"><span id="seconds">00</span><label>ثانية</label></div>
+      </div>
+      
+      <button class="btn-primary" id="openDrawerHero">سجّل مجاناً →</button>
+    </div>
+    <!-- Animated Background -->
+    <canvas id="particles"></canvas>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <h2 class="section-title">عن <span>الهاكاثون</span></h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <i class="fas fa-users"></i>
+        <h3>+500</h3>
+        <p>مشارك</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-trophy"></i>
+        <h3>+100,000</h3>
+        <p>ريال جوائز</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-clock"></i>
+        <h3>48</h3>
+        <p>ساعة مكثفة</p>
+      </div>
+      <div class="about-card">
+        <i class="fas fa-building"></i>
+        <h3>+20</h3>
+        <p>شركة راعية</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="timeline-section section" id="timeline">
+    <h2 class="section-title">الجدول <span>الزمني</span></h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>فتح التسجيل</h3>
+          <span>1 يوليو 2026</span>
+          <p>ابدأ رحلتك بالتسجيل المجاني</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>إغلاق التسجيل</h3>
+          <span>10 أغسطس 2026</span>
+          <p>آخر موعد لقبول الطلبات</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>بدء الهاكاثون</h3>
+          <span>15 أغسطس 2026</span>
+          <p>انطلاق المسابقة رسمياً</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>التحكيم والنتائج</h3>
+          <span>17 أغسطس 2026</span>
+          <p>إعلان الفائزين وتوزيع الجوائز</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prizes -->
+  <section class="prizes-section section" id="prizes">
+    <h2 class="section-title">🏆 الجوائز</h2>
+    <div class="prizes-grid">
+      <div class="prize-card silver">
+        <div class="medal">🥈</div>
+        <h3>المركز الثاني</h3>
+        <div class="amount">25,000 ريال</div>
+      </div>
+      <div class="prize-card gold">
+        <div class="medal">🥇</div>
+        <h3>المركز الأول</h3>
+        <div class="amount">50,000 ريال</div>
+        <div class="crown">👑</div>
+      </div>
+      <div class="prize-card bronze">
+        <div class="medal">🥉</div>
+        <h3>المركز الثالث</h3>
+        <div class="amount">15,000 ريال</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section section" id="faq">
+    <h2 class="section-title">الأسئلة <span>الشائعة</span></h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">من يستطيع المشاركة؟ <span>+</span></div>
+        <div class="faq-answer">الجميع! طلاب، مطورون، مصممون، وأصحاب الأفكار.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">هل التسجيل مجاني؟ <span>+</span></div>
+        <div class="faq-answer">نعم، التسجيل مجاني تماماً للجميع.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">كم حجم الفريق؟ <span>+</span></div>
+        <div class="faq-answer">من 2 إلى 5 أشخاص لكل فريق.</div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Registration Side Drawer -->
+
+  <!-- Dark Overlay -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Side Drawer Panel -->
+  <div class="drawer" id="registerDrawer">
+
+    <!-- Drawer Header -->
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <span class="drawer-icon">🚀</span>
+        <h2>سجّل الآن</h2>
+      </div>
+      <button class="drawer-close" id="closeDrawer" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Body -->
+    <div class="drawer-body">
+      <p class="drawer-subtitle">انضم لأكثر من <strong>500 مشارك</strong> في هاكاثون وادي مكة 🏆</p>
+
+      <form class="register-form" id="registerForm">
+
+        <div class="field-group">
+          <label>الاسم الكامل</label>
+          <input type="text" placeholder="مثال: محمد عبدالله" required>
+        </div>
+
+        <div class="field-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="field-group">
+          <label>رقم الجوال</label>
+          <input type="tel" placeholder="05XXXXXXXX">
+        </div>
+
+        <div class="field-group">
+          <label>التخصص</label>
+          <select id="specialtySelect" required>
+            <option value="" disabled selected>اختر تخصصك</option>
+            <option value="dev">مطور برمجيات</option>
+            <option value="design">مصمم UI/UX</option>
+            <option value="data">علم بيانات</option>
+            <option value="other">أخرى</option>
+          </select>
+        </div>
+
+        <!-- Custom Specialty Input -->
+        <div class="other-field" id="otherField">
+          <input type="text" id="customSpecialty" placeholder="اكتب تخصصك هنا...">
+        </div>
+
+        <button type="submit" class="btn-primary drawer-submit">إرسال الطلب 🚀</button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">⚡ هاكاثون وادي مكة</div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>© 2026 هاكاثون وادي مكة. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
